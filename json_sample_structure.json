@@ -1,0 +1,232 @@
+{
+    "_embedded": {
+        "events": [
+            {
+                "name": "P!NK: Summer Carnival 2024",
+                "type": "event",
+                "id": "vvG17Z9MBX0JyU",
+                "sales": {
+                    "public": {
+                        "startDateTime": "2023-12-11T15:00:00Z",
+                        "startTBD": false,
+                        "startTBA": false,
+                        "endDateTime": "2024-08-22T00:30:00Z"
+                    }
+                },
+                "dates": {
+                    "start": {
+                        "localDate": "2024-08-21",
+                        "localTime": "18:30:00",
+                        "dateTime": "2024-08-21T22:30:00Z",
+                        "dateTBD": false,
+                        "dateTBA": false,
+                        "timeTBA": false,
+                        "noSpecificTime": false
+                    },
+                    "timezone": "America/New_York",
+                    "status": {
+                        "code": "onsale"
+                    }
+                },
+                "classifications": [
+                    {
+                        "primary": true,
+                        "segment": {
+                            "id": "KZFzniwnSyZfZ7v7nJ",
+                            "name": "Music"
+                        },
+                        "genre": {
+                            "id": "KnvZfZ7vAeA",
+                            "name": "Rock"
+                        },
+                        "subGenre": {
+                            "id": "KZazBEonSMnZfZ7v6F1",
+                            "name": "Pop"
+                        },
+                        "type": {
+                            "id": "KZAyXgnZfZ7v7nI",
+                            "name": "Undefined"
+                        },
+                        "subType": {
+                            "id": "KZFzBErXgnZfZ7v7lJ",
+                            "name": "Undefined"
+                        }
+                    }
+                ],
+                "priceRanges": [
+                    {
+                        "type": "standard",
+                        "currency": "USD",
+                        "min": 59.11,
+                        "max": 340.0
+                    }
+                ],
+                "_embedded": {
+                    "venues": [
+                        {
+                            "name": "Gillette Stadium",
+                            "type": "venue",
+                            "id": "KovZpZA6kvlA",
+                            "postalCode": "02035",
+                            "timezone": "America/New_York",
+                            "city": {
+                                "name": "Foxborough"
+                            },
+                            "state": {
+                                "name": "Massachusetts",
+                                "stateCode": "MA"
+                            },
+                            "country": {
+                                "name": "United States Of America",
+                                "countryCode": "US"
+                            },
+                            "address": {
+                                "line1": "1 Patriot Place"
+                            },
+                            "location": {
+                                "longitude": "-71.264321",
+                                "latitude": "42.090918"
+                            },
+                            "markets": [
+                                {
+                                    "name": "Boston",
+                                    "id": "11"
+                                },
+                                {
+                                    "name": "New England",
+                                    "id": "33"
+                                },
+                                {
+                                    "name": "Connecticut",
+                                    "id": "124"
+                                }
+                            ]
+                        }
+                    ],
+                    "attractions": [
+                        {
+                            "name": "P!NK",
+                            "type": "attraction",
+                            "id": "K8vZ9171Jo7",
+                            "classifications": [
+                                {
+                                    "primary": true,
+                                    "segment": {
+                                        "id": "KZFzniwnSyZfZ7v7nJ",
+                                        "name": "Music"
+                                    },
+                                    "genre": {
+                                        "id": "KnvZfZ7vAeA",
+                                        "name": "Rock"
+                                    },
+                                    "subGenre": {
+                                        "id": "KZazBEonSMnZfZ7v6F1",
+                                        "name": "Pop"
+                                    },
+                                    "type": {
+                                        "id": "KZAyXgnZfZ7v7la",
+                                        "name": "Individual"
+                                    },
+                                    "subType": {
+                                        "id": "KZFzBErXgnZfZ7vAd7",
+                                        "name": "Musician"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Sheryl Crow",
+                            "type": "attraction",
+                            "id": "K8vZ91713kV",
+                            "classifications": [
+                                {
+                                    "primary": true,
+                                    "segment": {
+                                        "id": "KZFzniwnSyZfZ7v7nJ",
+                                        "name": "Music"
+                                    },
+                                    "genre": {
+                                        "id": "KnvZfZ7vAeA",
+                                        "name": "Rock"
+                                    },
+                                    "subGenre": {
+                                        "id": "KZazBEonSMnZfZ7v6dt",
+                                        "name": "Alternative Rock"
+                                    },
+                                    "type": {
+                                        "id": "KZAyXgnZfZ7v7nI",
+                                        "name": "Undefined"
+                                    },
+                                    "subType": {
+                                        "id": "KZFzBErXgnZfZ7v7lJ",
+                                        "name": "Undefined"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "The Script",
+                            "type": "attraction",
+                            "id": "K8vZ917GGs0",
+                            "classifications": [
+                                {
+                                    "primary": true,
+                                    "segment": {
+                                        "id": "KZFzniwnSyZfZ7v7nJ",
+                                        "name": "Music"
+                                    },
+                                    "genre": {
+                                        "id": "KnvZfZ7vAeA",
+                                        "name": "Rock"
+                                    },
+                                    "subGenre": {
+                                        "id": "KZazBEonSMnZfZ7v6F1",
+                                        "name": "Pop"
+                                    },
+                                    "type": {
+                                        "id": "KZAyXgnZfZ7v7nI",
+                                        "name": "Undefined"
+                                    },
+                                    "subType": {
+                                        "id": "KZFzBErXgnZfZ7v7lJ",
+                                        "name": "Undefined"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "KidCutUp",
+                            "type": "attraction",
+                            "id": "K8vZ9178Lb7",
+                            "classifications": [
+                                {
+                                    "primary": true,
+                                    "segment": {
+                                        "id": "KZFzniwnSyZfZ7v7nJ",
+                                        "name": "Music"
+                                    },
+                                    "genre": {
+                                        "id": "KnvZfZ7vAvF",
+                                        "name": "Dance/Electronic"
+                                    },
+                                    "subGenre": {
+                                        "id": "KZazBEonSMnZfZ7vA1E",
+                                        "name": "Dance/Electronic"
+                                    },
+                                    "type": {
+                                        "id": "KZAyXgnZfZ7v7la",
+                                        "name": "Individual"
+                                    },
+                                    "subType": {
+                                        "id": "KZFzBErXgnZfZ7vAd7",
+                                        "name": "Musician"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
