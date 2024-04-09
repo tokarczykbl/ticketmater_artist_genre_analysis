@@ -8,32 +8,60 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(myMap);
 
+// Fetch tour data for the artist "Primus"
+// Fetch tour data for the artist "Primus"
+fetch("http://127.0.0.1:5000/api/v1.0/tour/Goose")
+  .then(response => response.json())
+  .then(data => {
+    // Initialize an empty array to store the coordinates
+    const coordinates = [];
 
-// Create a red circle over Dallas.
-L.circle([32.7767, -96.7979], {
-  color: "red",
-  fillColor: "red",
-  fillOpacity: 0.75,
-  radius: 10000
-}).addTo(myMap);
+    // Loop through each event in the fetched data
+    data.forEach((event, index) => {
+      // Loop through each venue in the event
+      event.dates.forEach((date, dateIndex) => {
+        date.venues.forEach((venue, venueIndex) => {
+          // Push the latitude and longitude of the venue to the coordinates array
+          coordinates.push([venue.latitude, venue.longitude]);
+          
+          // Create marker for the venue coordinates
+          const marker = L.marker([venue.latitude, venue.longitude]).addTo(myMap);
+          
+          // Check if it's the first marker
+          if (index === 0 && dateIndex === 0 && venueIndex === 0) {
+            marker.setIcon(L.icon({
+              iconUrl: 'green-marker-icon.png',
+              iconSize: [25, 41],
+              iconAnchor: [12, 41],
+              popupAnchor: [1, -34],
+              tooltipAnchor: [16, -28],
+            }));
+          }
+          // Check if it's the last marker
+          else if (index === data.length - 1 && dateIndex === event.dates.length - 1 && venueIndex === date.venues.length - 1) {
+            marker.setIcon(L.icon({
+              iconUrl: 'red-marker-icon.png',
+              iconSize: [25, 41],
+              iconAnchor: [12, 41],
+              popupAnchor: [1, -34],
+              tooltipAnchor: [16, -28],
+            }));
+          }
+          
+          // Create a popup for the marker displaying the venue information and date
+          const popupContent = `<b>Venue:</b> ${venue.name}<br><b>City:</b> ${venue.city}<br><b>Start Date:</b> ${date.start_date}`;
+          marker.bindPopup(popupContent);
+          
+          // Optionally, you can add a tooltip to show additional information
+          const tooltipContent = `Start Date: ${date.start_date}`;
+          marker.bindTooltip(tooltipContent);
+        });
+      });
+    });
 
-// Connect a black line from NYC to Toronto.
-let line = [
-  [40.7128, -74.0060],
-  [43.6532, -79.3832]
-];
-L.polyline(line, {
-  color: "black"
-}).addTo(myMap);
-
-// Create a purple polygon the covers the area in Atlanta, Savannah, Jacksonville, and Montgomery.
-L.polygon([
-  [33.7490, -84.3880],
-  [32.0809, -81.0912],
-  [30.3322, -81.6557],
-  [32.3792, -86.3077]
-], {
-  color: "purple",
-  fillColor: "purple",
-  fillOpacity: 0.75
-}).addTo(myMap);
+    // Create polyline with the extracted coordinates
+    L.polyline(coordinates, { color: 'black' }).addTo(myMap);
+  })
+  .catch(error => {
+    console.error('Error fetching tour data:', error);
+  });
