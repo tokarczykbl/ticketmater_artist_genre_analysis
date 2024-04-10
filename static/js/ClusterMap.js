@@ -16,6 +16,9 @@ let clustersByGenre = {};
 // Get the data with d3
 d3.json(baseURL).then(function(response) {
 
+  // Get the current date
+  let currentDate = new Date();
+
   // Loop through the data
   for (let i = 0; i < response.length; i++) {
 
@@ -23,9 +26,10 @@ d3.json(baseURL).then(function(response) {
     let longitude = response[i].venue_longitude;
     let latitude = response[i].venue_latitude;
     let genre = response[i].genre;
+    let startDate = new Date(response[i].start_date);
 
-    // Check for the location properties and genre
-    if (longitude && latitude && genre) {
+    // Check for the location properties, genre, and future event
+    if (longitude && latitude && genre && startDate > currentDate) {
 
       // Create a marker for the current attraction
       let marker = L.marker([latitude, longitude]).bindPopup(
