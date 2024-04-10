@@ -8,6 +8,8 @@ table.classed("table-striped", true);
 // Use D3 to select the table body
 let tbody = d3.select("tbody");
 
+let ul = d3.select(".genres");
+
 genre_url = "http://127.0.0.1:5000/api/v1.0/genres";
 
 // BONUS: Dynamic table
@@ -18,11 +20,13 @@ fetch(genre_url)
   .then(data => {
     // Loop through the data and populate the table
     data.forEach(item => {
+      ul.append("li").text(item._id).attr("class","list-group-item d-flex justify-content-between align-items-center").append("span").text(item.count).attr("class","badge text-bg-secondary");
+      //.html(`<span class="badge text-bg-secondary">${item.count}</span></li>`)
       let row = tbody.append("tr"); // Append a row for each item
 
       // Append cells for genre and count
-      row.append("td").text(item._id);
-      row.append("td").text(item.count);
+      // row.append("td").text(item._id);
+      // row.append("td").text(item.count);
     });
   })
   .catch(error => console.error('Error fetching data:', error));
@@ -45,11 +49,4 @@ fetch(names_url)
   .catch(error => console.error('Error fetching data:', error));
 
 
-  let myMap = L.map("map2").setView([39.8283, -98.5795], 5);
-
-  // Add a tile layer (the background map image) to our map.
-  // Use the addTo() method to add objects to our map.
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(myMap);
 
