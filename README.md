@@ -2,7 +2,7 @@
 
 ## Summary
 
-This project aims to provide an interactive visualization tool, Gig Guide, for users to explore and plan their summer concert schedule. By leveraging data from Ticketmaster's Discovery API, Gig Guide offers insights into various concerts, artists, and venues, facilitating informed decision-making for concert-goers.
+This project aims to provide an interactive visualization tool, Gig Guide, for users to explore and plan their summer concert schedule. By leveraging data from Ticketmaster's Discovery API, Gig Guide offers insights into various concerts, artists, and venues, facilitating informed decision-making for concert-goers.  The usere will need to install the neccessary dependencies to operate as the data is hosted locally on the users machine for this project.  
 
 ## Ethical Considerations
 
