@@ -15,6 +15,12 @@
     - **cluster_map.js**: JavaScript file used for creating cluster map with concert artist, venue and location information
     - **genre_table_artist_drop_down.js**: JavaScript file used to create artist dropdown list and genre tally list
     - **tour_map.js**: JavaScript file used to create tour run map for selected artists
+- `json_files`:
+    - **ticketmaster_events_part_1.json**: JSON file of Ticketmaster Discovery API results
+    - **ticketmaster_events_part_2.json**: JSON file of Ticketmaster Discovery API results
+    - **ticketmaster_attractions.json**: JSON file of single attractions broken out from Ticketmaster events
+    - **ticketmaster_tour_run.json**: JSON file of single artist and all their associates tour dates and venue locations
+
 
 
 
