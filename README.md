@@ -20,10 +20,12 @@
     - **ticketmaster_events_part_2.json**: JSON file of Ticketmaster Discovery API results
     - **ticketmaster_attractions.json**: JSON file of single attractions broken out from Ticketmaster events
     - **ticketmaster_tour_run.json**: JSON file of single artist and all their associates tour dates and venue locations
-
-
-
-
+- `bar_chart_races`: Various example outputs of bar chart races using different styles
+- `b_other_docs`:
+    - **BenandLuna.jpg**: Image
+    - **David.png**: Image
+    - **ETL Workflow Diagram.pdf**: ETL Workflow diagram using [LucidChart](https://www.lucidchart.com)
+    - **Project 3 Proposal - Ticket Master.docx**: Initial Proposal Document
 
 
 ## Usage
