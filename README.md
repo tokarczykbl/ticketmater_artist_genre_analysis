@@ -12,14 +12,13 @@
 - `Static/css`:
     - **style.css**: CSS file for formatting of elements within page
 - `Static/js`:
-    -**cluster_map.js**: JavaScript file used for creating cluster map with concert artist, venue and location information
-    -**genre_table_artist_drop_down.js**: JavaScript file used to create artist dropdown list and genre tally list
-    -**tour_map.js**: JavaScript file used to create tour run map for selected artists
+    - **cluster_map.js**: JavaScript file used for creating cluster map with concert artist, venue and location information
+    - **genre_table_artist_drop_down.js**: JavaScript file used to create artist dropdown list and genre tally list
+    - **tour_map.js**: JavaScript file used to create tour run map for selected artists
 
 
 
-- `Resources` folder: Contains cleaned csv files for loading into PostgreSQL and provided source data in xlsx format for analysis.
-- `screenshots` folder: Contains images of working tables in PostgreSQL.
+
 
 ## Usage
 
