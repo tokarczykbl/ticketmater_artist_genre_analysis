@@ -66,4 +66,4 @@ Please refer to [Discovery API documentation](https://developer.ticketmaster.com
     - sys
     - pymongo, MongoClient
     - matplotlib.pyplot
-    - bar_chart_race [documentation](https://www.dexplo.org/bar_chart_race/)
+    - [bar_chart_race](https://www.dexplo.org/bar_chart_race/)
