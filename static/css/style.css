@@ -1,3 +1,4 @@
+/* Format body */
 body {
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -20,31 +21,6 @@ body {
   }
 }
 
-.wave {
-  background: rgb(255 255 255 / 25%);
-  border-radius: 1000% 1000% 0 0;
-  position: fixed;
-  width: 200%;
-  height: 12em;
-  animation: wave 10s -3s linear infinite;
-  transform: translate3d(0, 0, 0);
-  opacity: 0.8;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.wave:nth-of-type(2) {
-  bottom: -1.25em;
-  animation: wave 18s linear reverse infinite;
-  opacity: 0.8;
-}
-
-.wave:nth-of-type(3) {
-  bottom: -2.5em;
-  animation: wave 20s -1s reverse infinite;
-  opacity: 0.9;
-}
 
 @keyframes wave {
   2% {
@@ -69,6 +45,75 @@ body {
 
   padding: 0;
   margin: 0;
+}
+
+/* Add Font to Title */
+.logo {
+  font-family: 'Bradley Hand', cursive; /* Use Bradley Hand (Cursive) font */
+  font-size: 72px; /* Specify the font size */
+  font-weight: bold; /* Specify the font weight */
+  color: #333; /* Specify the font color */
+  text-transform: uppercase; /* Specify the text transformation */
+  text-decoration: underline; /* Specify the text decoration */
+  text-transform: none; /* Speify Font transormation */
+}
+
+
+ /* CSS styles to remove background from page header */
+ .navbar {
+  background-color: transparent !important; /* Set background color to transparent */
+  border-bottom: none; /* Remove border */
+}
+
+/* Add Font to Nav-link */
+.nav-link {
+  font-family: 'Bradley Hand', cursive; /* Use Bradley Hand (Cursive) font */
+  font-size: 26px; /* Specify the font size */
+  font-weight: bold; /* Specify the font weight */
+  color: #333; /* Specify the font color */
+
+  
+}
+
+/* Add into-text */
+.intro-text{
+  font-family: 'Bradley Hand', cursive;
+  font-size: 32px; /* Specify the font size */
+  font-style: italic; /* Specify the font style */
+  color: #333; /* Specify the font color */
+
+}
+
+#concert_cluster h1 {
+  font-family: 'Bradley Hand', cursive;
+  font-size: 45px;
+  text-decoration: underline;
+
+}
+
+#concert_cluster h2 {
+  font-family: 'Bradley Hand', cursive;
+  font-size: 18px;
+
+}
+
+#band_tour h1 {
+  font-family: 'Bradley Hand', cursive;
+  font-size: 45px;
+  text-decoration: underline;
+
+}
+
+#band_tour h2 {
+  font-family: 'Bradley Hand', cursive;
+  font-size: 18px;
+
+}
+
+#team {
+  font-family: 'Bradley Hand', cursive;
+  font-size: 45px;
+  text-decoration: underline;
 }
 
 #map,
