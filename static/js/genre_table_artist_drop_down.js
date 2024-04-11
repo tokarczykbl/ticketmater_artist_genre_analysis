@@ -21,12 +21,9 @@ fetch(genre_url)
     // Loop through the data and populate the table
     data.forEach(item => {
       ul.append("li").text(item._id).attr("class","list-group-item d-flex justify-content-between align-items-center").append("span").text(item.count).attr("class","badge text-bg-secondary");
-      //.html(`<span class="badge text-bg-secondary">${item.count}</span></li>`)
-      let row = tbody.append("tr"); // Append a row for each item
 
-      // Append cells for genre and count
-      // row.append("td").text(item._id);
-      // row.append("td").text(item.count);
+      // let row = tbody.append("tr"); // Append a row for each item
+
     });
   })
   .catch(error => console.error('Error fetching data:', error));
