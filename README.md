@@ -36,7 +36,7 @@ In gathering data for this project, Ticketmaster served as the sole source. With
 
 ## Data Sources
 
-[Ticketmaster] (https://developer.ticketmaster.com/) - To run the program you will need to create your own account on the Ticketmaster Developer website.
+[Ticketmaster](https://developer.ticketmaster.com/) - To run the program you will need to create your own account on the Ticketmaster Developer website.
 Please refer to [Discovery API documentation](https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/) for further information.
 
 ## Dependencies
