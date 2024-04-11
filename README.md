@@ -1,6 +1,10 @@
 ### UNC Data Analytics Project 3: Gig Guide: An Interactive Visualization Tool for your Summer Concert Schedule
 
+### Summary
 
+## Ethical Considerations
+
+In gathering data for this project, Ticketmaster served as the sole source. Within the concert industry, debates about rising ticket prices and corporate monopolization exists. By relying solely on Ticketmaster, the website may unintentionally exclude certain independent venues that opt not to collaborate with Ticketmaster and its affiliates. This omission could impact smaller businesses, as their events may not be showcased on the platform, potentially limiting their visibility and audience reach.  Moreover, the focus on Ticketmaster's listings may inadvertently cater more to mainstream acts and larger venues, potentially excluding audiences that prefer independent or niche performances. This limitation in scope may inadvertently marginalize certain segments of the concert-going community.
 
 ### Files Included
 
@@ -34,13 +38,17 @@ Usage of the application is dependent on having a local MongoDB database with th
 
 1. Clone the repository to your local machine.
 2. Create an account on the [Ticketmaster](https://developer.ticketmaster.com/) developer website to access your API
-2. Execute the code until the `Create the Contacts Dataframe` section. From there, you will have two options to create the same end file, but they cannot be run sequentially. If choosing option one, you will need to restart your notebook to execute option two.
-3. Open PostgreSQL software and create tables with the schema portion of the code. Import the data for the tables using the appropriate CSV files in the `Resources` folder.
-4. Run the queries to check table load.
+3. Open the **ticketmaster_database_creation.ipynb** file.
+4. You will need to edit the first code block to point to your personal API key. Currently the code uses the sys method to point to a file with personal key.
+5. Run code blocks 1-10 up until the code blocks listed "As needed".
+6. Check your MongoDB using Compass or other methods of choice to ensure database and collections were created.
+7. Close **ticketmaster_database_creation.ipynb**
+8. OPen **tickermaster_bar_chart_race_creation.ipynb** and run all code blocks to create collection of bar_chart_race gifs
+9. Run **app.py** file using "python app.py" and open API in browser
+10. Open **index.html** in Live Server with VS Code or personal choice of operation.
+11. Navigate website using menu buttons, map filters, and dropdown to select which artists and genres you are interested
 
-## Ethical Considerations
 
-In gathering data for this project, Ticketmaster served as the sole source. Within the concert industry, debates about rising ticket prices and corporate monopolization exists. By relying solely on Ticketmaster, the website may unintentionally exclude certain independent venues that opt not to collaborate with Ticketmaster and its affiliates. This omission could impact smaller businesses, as their events may not be showcased on the platform, potentially limiting their visibility and audience reach.  Moreover, the focus on Ticketmaster's listings may inadvertently cater more to mainstream acts and larger venues, potentially excluding audiences that prefer independent or niche performances. This limitation in scope may inadvertently marginalize certain segments of the concert-going community.
 
 ## Data Sources
 
@@ -51,7 +59,11 @@ Please refer to [Discovery API documentation](https://developer.ticketmaster.com
 
 - [MongoDB Compass](https://www.mongodb.com/products/tools/compass)
 - [Ticketmaster Developer Account and API](https://developer.ticketmaster.com/)
-- pandas
-- json
-- numpy
-- 
+- Python Libraries
+    - pandas
+    - requests
+    - json
+    - sys
+    - pymongo, MongoClient
+    - matplotlib.pyplot
+    - bar_chart_race [documentation](https://www.dexplo.org/bar_chart_race/)
