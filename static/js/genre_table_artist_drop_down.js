@@ -1,14 +1,9 @@
 // Use D3 to select the table
 let table = d3.select("table");
 
-// Use D3 to create a bootstrap striped table
-// https://getbootstrap.com/docs/5.3/content/tables/#striped-rows
-table.classed("table-striped", true);
-
-// Use D3 to select the table body
-let tbody = d3.select("tbody");
-
 let ul = d3.select(".genres");
+
+table.style("background-color", "#333"); // Change #333 to the desired darker color
 
 genre_url = "http://127.0.0.1:5000/api/v1.0/genres";
 
