@@ -1,22 +1,23 @@
 ### UNC Data Analytics Project 3: Gig Guide: An Interactive Visualization Tool for your Summer Concert Schedule
 
-This repository contains materials for Module 13 of the UNC Data Analytics Program, focusing on the tools taught in the first half of the program. Techniques utilized cover:
 
-- Reading data from xlsx files into pandas dataframes.
-- Checking the datatypes and converting datatypes for readability.
-- Creating new data frames via column manipulation and merging using pandas.
-- Utilizing JSON and Regex techniques to create a contacts data frame parsed out from source data.
-- Converting all dataframes to CSV for loading into PostgreSQL databases.
-- Creating SQL database schema for proper creation of tables and relationships.
-- Building SQL queries to check table loads were valid.
-- Utilizing [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) to create an ERD visualization schema.
 
 ### Files Included
 
-- **ETL_Mini_Project_BTokarczyk_JGuinn.ipynb**: Jupyter Notebook containing all the code necessary to load xlsx files, create dataframes, manipulate data, and create csv files.
-- **ERD.Model.png**: Image file of the ERD schema created using Quick Database Diagrams.
-- **crowdfund_db_schema.sql**: SQL file for creating tables and joining data in PostgreSQL. Queries are included for checking table data.
-- **02-project.md**: Course-provided instructions for completing the project.
+- **ticketmaster_database_creation.ipynb**: Jupyter Notebook containing all the code necessary query Ticketmaster Discovery API, remove unneccerrary JSON key value pairs, create MongoDB database, collections and documents, create JSON copies of raw data, manipulate data.
+- **tickermaster_bar_chart_race_creation.ipynb**: Jupyter Notebook containing all the code necesary to create the Bar Chart Race gif which available on webpage.
+- **index.html**: Framework for website
+- **cluster_map.html**: Framework for cluster_map to be input into index.html
+- **app.py**: Python file for creation of Flask API utilized to population maps, dropdowns and list
+- `Static/css`:
+    - **style.css**: CSS file for formatting of elements within page
+- `Static/js`:
+    -**cluster_map.js**: JavaScript file used for creating cluster map with concert artist, venue and location information
+    -**genre_table_artist_drop_down.js**: JavaScript file used to create artist dropdown list and genre tally list
+    -**tour_map.js**: JavaScript file used to create tour run map for selected artists
+
+
+
 - `Resources` folder: Contains cleaned csv files for loading into PostgreSQL and provided source data in xlsx format for analysis.
 - `screenshots` folder: Contains images of working tables in PostgreSQL.
 
