@@ -48,5 +48,9 @@ fetch(names_url)
   })
   .catch(error => console.error('Error fetching data:', error));
 
+  document.addEventListener("DOMContentLoaded", function() {
+    let artist1 = d3.select("#selDataset").node().value; // Use #selDataset to select dropdown
 
+    console.log(artist1);
+});
 
