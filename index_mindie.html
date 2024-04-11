@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ticketmaster Analysis</title>
+  <title>GigGuide.com</title>
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
 
@@ -33,17 +33,20 @@
     <div class="page-header">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <h1 class="logo mx-auto order-0">Website Title Here</a></h1>
+          <h1 class="logo mx-left order-0">GigGuide.com</a></h1>
           <div class="nav-menu d-none d-lg-block">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#intro">Introduction Title</a>
+                <a class="nav-link active" aria-current="page" href="#intro">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#concert_cluster">Cluster Map Title</a>
+                <a class="nav-link" href="#concert_cluster">Genre Guide</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#band_tour">Band Tour Map Title</a>
+                <a class="nav-link" href="#band_tour">Tour Guide</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">The Team</a>
               </li>
             </ul>
           </div>
@@ -54,14 +57,11 @@
     <div class="row">
       <section id="intro">
         <div class="row">
-          <p>Something here to intro text</p>
+          <p class="intro-text">Navigate the World of Live Music</p>
         </div>
         <div class="row">
           <div class="col-md-6 overflow-auto" style="height:300px">
             <div class="row">
-              <div
-                class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-1 border-bottom">
-              </div>
               <section id="genre_cluster">
                 <div class="row">
                 </div>
@@ -75,7 +75,6 @@
 
           <div class="col-md-6">
             <div class="row">
-              Which Genre has the most concerts this summer
             </div>
             <div class="row">
               <img src="b_other_docs/bar_chart_race.gif" alt="bar_chart_race" style="height:300px; width:3000px;">
@@ -92,10 +91,11 @@
     <div class="row">
       <section id="concert_cluster">
         <div class="row">
-          <h1>Genre Map - Use the filter panel on the top right of the map to select genres</h1>
+          <h1>Genre Guide</h1>
+          <h2>Use the filter panel on the top right of the map to select genres</h2>
 
           <div class="map-row col-md-12">
-            <iframe class="map-row" src="cluster_map.html" width="100%" style="width: 1350px; height: 900px;""> </iframe>
+            <iframe class="map-row" src="cluster_map.html" width="100%" style="width: 1350px; height: 900px;"> </iframe>
           </div>
       </section>
     </div>
@@ -103,7 +103,8 @@
     <div class="row">
       <section id="band_tour">
         <div class="row">
-          <h1>Section Title</h1>
+          <h1>Tour Guide</h1>
+          <h2>Use the dropdown to see where your favorite artist will be performing</h2>
         </div>
     </div>
     <select id="selDataset">
@@ -112,9 +113,24 @@
     <div class="map-row col-md-12">
       <div id="map" width="100%" style="width: 1350px; height: 900px;"></div>
       <!--<iframe class="map-row" src="tour_run_map.html" width="100%" style="width: 1275px;"></iframe>-->
+
+    <div class="row col-md-12">
+      <section id="team">
+        <h1>This website has been brought to you by:</h1>
+        <div class="team_row"></div>
+      </section>
     </div>
-    </section>
+    <div class="team_row col-md-6">
+      <div class="row">
+        <img src="b_other_docs/Ben.png" alt="bar_chart_race" style="height:275px; width:225px;">
+        <img src="b_other_docs/David.png" alt="bar_chart_race" style="height:275px; width:225px;">
+      </div>
+    </div>
   </div>
+  <div class="row">
+  </div>
+  <div class="row col-md-12">
+
   </div>
 
 
