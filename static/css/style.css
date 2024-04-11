@@ -116,13 +116,6 @@ body {
   text-decoration: underline;
 }
 
-#map,
-body,
-html {
-  height: 100%;
-}
-
-.map-row {
-  height: 50vw;
-  width: 80vw
+#map {
+  height: 600px;
 }
